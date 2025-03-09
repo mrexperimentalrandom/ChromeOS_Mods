@@ -1,0 +1,9 @@
+# Installing Linux Apps on ChromeOS
+
+1. Enable Linux (Beta) in ChromeOS Settings
+2. Open Terminal
+3. Update package list: sudo apt update
+4. Install desired applications, e.g.:
+   - For GIMP: sudo apt install gimp
+   - For VS Code: sudo apt install code
+5. Launch apps from the ChromeOS app drawer
