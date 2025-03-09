@@ -26,7 +26,6 @@ Note: No password is required in Developer Mode
 3. Generate SSH Key Pair
 Command:
 
-text
 ssh-keygen
 Tip: Accept defaults by pressing Enter at each prompt
 
