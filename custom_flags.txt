@@ -1,0 +1,8 @@
+# Enabling Experimental Features
+
+1. Open chrome://flags in browser
+2. Search for desired flags, e.g.:
+   - "Dark/Light Mode of System UI"
+   - "Scheduler Configuration"
+3. Set flags to "Enabled"
+4. Restart ChromeOS to apply changes
