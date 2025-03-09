@@ -1,0 +1,85 @@
+Chrome OS version 119 introduced restrictions 
+on sudo usage in the Crosh terminal. 
+  
+This guide outlines a method to regain sudo access 
+using SSH key authentication. The process leverages Chrome OS's 
+built-in SSH server to create a workaround.
+
+Prerequisites
+A Chromebook in Developer Mode
+
+Basic familiarity with terminal commands
+
+Comfort with potential risks to system stability
+
+Step-by-Step Guide
+1. Enter VT-2 Terminal
+Action: Press Ctrl + Alt + F2
+
+Note: Some Chromebooks may use Ctrl + Alt + → instead
+
+2. Log in as chronos
+Command: Enter chronos at the login prompt
+
+Note: No password is required in Developer Mode
+
+3. Generate SSH Key Pair
+Command:
+
+text
+ssh-keygen
+Tip: Accept defaults by pressing Enter at each prompt
+
+4. Set Up Public Key Authentication
+Command:
+
+cat /home/chronos/user/.ssh/id_rsa.pub > /home/chronos/user/.ssh/authorized_keys
+5. Configure SSH Daemon
+Open config:
+
+text
+sudo nano /etc/ssh/sshd_config
+Add/modify:
+
+PubkeyAuthentication yes
+HostKey /home/chronos/user/.ssh/id_rsa.pub
+Save & Exit: Ctrl + O, then Ctrl + X
+
+6. Start SSH Server
+Command:
+
+sudo /usr/sbin/sshd
+7. Return to Crosh and Log In via SSH
+Access Crosh: Press Ctrl + Alt + T
+
+SSH Command:
+
+
+ssh localhost -l chronos -i /home/chronos/user/.ssh/id_rsa
+8. Verify sudo Access
+Test Command:
+
+sudo echo "Success!"
+If successful, you now have sudo privileges in Crosh
+
+Best Practices and Tips
+Security: Regularly update your SSH keys and monitor for 
+unauthorized access attempts.
+
+Convenience: Use this method for easier copy-pasting in 
+Crosh compared to VT-2.
+
+Reversibility: To undo changes, remove the added lines from 
+sshd_config and restart your Chromebook.
+
+Troubleshooting
+If SSH login fails, double-check the sshd_config file for typos.
+
+Ensure the SSH server is running with ps aux | grep sshd.
+
+If issues persist, reboot your Chromebook and try again from step 1.
+
+Conclusion
+This method provides a powerful workaround for advanced Chrome OS users. 
+Remember, with great power comes great responsibility. 
+Use these privileges wisely and always prioritize system security.
