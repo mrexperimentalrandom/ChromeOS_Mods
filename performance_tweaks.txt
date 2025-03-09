@@ -1,0 +1,8 @@
+# Optimizing ChromeOS Performance
+
+1. Disable unnecessary extensions
+2. Use Guest mode for better speed
+3. Clear browsing data regularly
+4. Enable tab discarding flag
+5. Use lightweight Android apps
+6. Consider powerwash if sluggish
