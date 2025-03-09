@@ -1,0 +1,57 @@
+This guide is for advanced users. 
+Modifying system settings may void your warranty or cause instability. 
+Proceed at your own risk.
+
+Prerequisites
+ChromeOS device (developer mode option 1 will be discussed here,
+it probably isnt the only way from my experience.)
+
+Android apps support enabled 
+
+Basic familiarity with terminal commands
+
+Steps
+1. Enable Developer Options in Android Settings
+Open Settings app
+
+Go to Apps > Google Play Store > Manage Android preferences
+
+Tap "Build number" 7 times to enable Developer options
+
+2. Enable USB Debugging
+In Android settings, go to System > Developer options
+
+Enable "USB debugging"
+
+3. Install Shizuku
+Open Google Play Store
+
+Search for "Shizuku" and install the app
+
+4. Start Shizuku Service
+Open Crosh (press Ctrl + Alt + T)
+
+Enter shell to access a full shell
+
+Run the following command:
+
+text
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+5. Grant Permissions
+Open Shizuku app
+
+Follow on-screen instructions to grant necessary permissions
+
+Usage
+Shizuku is now ready for use with compatible apps
+
+Some features may be limited due to ChromeOS restrictions
+
+Troubleshooting
+If Shizuku doesn't start, try rebooting your device
+
+Ensure Android subsystem is up-to-date
+
+Check Shizuku's official documentation for ChromeOS-specific issues
+
+Remember, Shizuku's functionality on ChromeOS may be limited compared to standard Android devices due to system differences and restrictions
