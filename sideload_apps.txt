@@ -1,0 +1,19 @@
+# Sideloading Android Apps
+Option 1
+1. Enable Developer Mode 
+2. Enable "Unknown sources" in Android settings
+3. Download desired APK files
+4. Use "Files" app to install APKs
+5. If installation fails, try using ADB:
+   - Enable ADB debugging in Android settings
+   - In crosh shell: shell 
+   - In crostini you can install adb tools etc
+   - Then: adb install /path/to/app.apk
+
+Option 2
+1. Go to Terminal app
+2. Go to developer settings (scroll down)
+3. Enable ADB under (develop android apps)
+4. Restart device 
+You dont need dev mode for ADB and you can use ADB commands from crostini 
+to install apk's.
