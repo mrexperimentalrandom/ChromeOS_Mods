@@ -1,0 +1,53 @@
+🌳 **Linux on ChromeOS**
+  ├── 📈 **Crostini**
+  │   ├── 📦 **Managed Environment**: Easy setup and integration with ChromeOS
+  │   ├── 🚫 **Unprivileged Containers**: Limited root access for security
+  │   ├── 📊 **Seamless Integration**: Apps appear in ChromeOS launcher
+  │   ├── 🚫 **Limited Customization**: Locked into ChromeOS ecosystem
+  │   └── 🤔 **Sandboxed Root Access**: Similar to `proot`, not full root
+  └── 📈 **Standalone LXC Containers**
+      ├── 🛠️ **Full Control**: Configure containers as needed
+      ├── 🔓 **Privileged Containers**: Allows root access and customization
+      ├── 📈 **Advanced Networking**: Complex setups possible
+      ├── 🌐 **Flexibility**: Choose from various Linux distributions
+      └── 📚 **Technical Expertise Required**: More setup and management needed
+No developer mode needed, just crosh > vmc start termina > chronos > lxc commands
+
+I am also aware that Crostini can run Docker and be root user inside the Docker container of various Linux Distros, but I am writing about LXC today because this removes your dependence on Google for functionality of your Virtual Machine. The goal here is to isolate your new LXC container from the PENGUIN container. This can be done with LXC network commands. Id reccomend reading documentation on LXC before playing around too much.
+
+Key Points Summary
+
+Crostini:
+
+Pros: Easy setup, seamless integration, user-friendly.
+
+Cons: Limited customization, no direct root access.
+
+Standalone LXC Containers:
+
+Pros: Full control, privileged containers, flexible configurations.
+
+Cons: Requires technical expertise, more setup involved.
+
+Emoji Legend
+📈: Represents a feature or tool.
+
+📦: Managed environment.
+
+🚫: Limitation.
+
+📊: Integration.
+
+🤔: Sandbox environment.
+
+🛠️: Customization and control.
+
+🔓: Privileged access.
+
+📈: Flexibility.
+
+🌐: Networking capabilities.
+
+📚: Technical requirements.
+
+🌳: Main topic.
