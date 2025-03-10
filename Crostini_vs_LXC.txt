@@ -1,0 +1,13 @@
+🌳 **Linux on ChromeOS**
+  ├── 📈 **Crostini**
+  │   ├── 📦 **Managed Environment**: Easy setup and integration with ChromeOS
+  │   ├── 🚫 **Unprivileged Containers**: Limited root access for security
+  │   ├── 📊 **Seamless Integration**: Apps appear in ChromeOS launcher
+  │   ├── 🚫 **Limited Customization**: Locked into ChromeOS ecosystem
+  │   └── 🤔 **Sandboxed Root Access**: Similar to `proot`, not full root
+  └── 📈 **Standalone LXC Containers**
+      ├── 🛠️ **Full Control**: Configure containers as needed
+      ├── 🔓 **Privileged Containers**: Allows root access and customization
+      ├── 📈 **Advanced Networking**: Complex setups possible
+      ├── 🌐 **Flexibility**: Choose from various Linux distributions
+      └── 📚 **Technical Expertise Required**: More setup and management needed
