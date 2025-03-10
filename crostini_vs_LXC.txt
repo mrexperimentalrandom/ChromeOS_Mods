@@ -13,7 +13,17 @@
       └── 📚 **Technical Expertise Required**: More setup and management needed
 No developer mode needed, just crosh > vmc start termina > chronos > lxc commands
 
-I am also aware that Crostini can run Docker and be root user inside the Docker container of various Linux Distros, but I am writing about LXC today because this removes your dependence on Google for functionality of your Virtual Machine. The goal here is to isolate your new LXC container from the PENGUIN container. This can be done with LXC network commands. Id reccomend reading documentation on LXC before playing around too much.
+I am also aware that Crostini can run Docker 
+and be root user inside the Docker container 
+of various Linux Distros, but I am writing about 
+LXC today because this removes your dependence on 
+Google for the base layer functionality of your 
+Virtual Machine. 
+The goal here is to isolate your new LXC container 
+from the PENGUIN container. 
+This can be done with LXC network commands. 
+Id reccomend reading documentation on LXC 
+before playing around too much.
 
 Key Points Summary
 
