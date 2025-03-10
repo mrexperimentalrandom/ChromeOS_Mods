@@ -11,3 +11,5 @@
       ├── 📈 **Advanced Networking**: Complex setups possible
       ├── 🌐 **Flexibility**: Choose from various Linux distributions
       └── 📚 **Technical Expertise Required**: More setup and management needed
+No developer mode needed, just crosh > vmc start termina > chronos > lxc commands
+Will write more details later, tired.
